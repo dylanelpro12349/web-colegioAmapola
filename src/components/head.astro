@@ -1,3 +1,5 @@
+
+
 <header class="head">
 
     <div class="logo">
@@ -5,7 +7,7 @@
 
         </div>
         <div class="logo-img">
-            <img src="/src/img/logo-head.png" alt="">
+            <img src="/public/img/logo-head.png" alt="">
         </div>
         <div class="tel">
 
@@ -14,11 +16,11 @@
 
     <nav class="navegacion">
         <ul class="ul-head">
-            <li class="li-head" id="inicio">Inicio</li>
-            <li class="li-head" id="redes">Redes sociales</li>
-            <li class="li-head" id="admisiones">Admisiones</li>
-            <li class="li-head" id="actividades">Actividades</li>
-            <li class="li-head" id="about">Sobre nosotros</li>
+            <li class="li-head"><a href="src/pages/index.astro ">inicio</a></li>
+            <li class="li-head"><a href="/src//pages/redes.astro">Redes sociales</a></li>
+            <li class="li-head"><a href="/src//pages/admisiones.astro">Admisiones</a></li>
+            <li class="li-head"><a href="/src//pages/actividades.astro">Actividades</a></li>
+            <li class="li-head"><a href="/src//pages/about.astro">Sobre nosotros</a></li>
         </ul>
     </nav>
 
@@ -55,22 +57,28 @@
     }
 
     .li-head{
-        color: white;
         font-size: 20px;
         cursor: pointer;
         padding: 10px 20px;
         font-weight: bolder;
         border-radius: 30px;
-        transition: ;
+        border: 2px solid #3B437B;
+        transition: 0.2s;
+    }
+
+    .li-head a{
+        text-decoration: none;
+        color: white;
     }
 
     .li-head:hover{
-        text-decoration: underline #e23939;
+        border-bottom: 4px solid #e23939;
     }
 
     .li-head:active{
         color: rgb(210, 209, 209);
-        background-color:#e23939;
+        border: 2px solid #e23939;
+        border-bottom: 4px solid #e23939;
     }
 
 
