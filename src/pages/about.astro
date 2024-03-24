@@ -8,16 +8,66 @@ import Footer from '../components/footer.astro'
 <head>
 
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="public/img/logo.png" />
+    <link rel="icon" type="image/png" href="public/img/icons/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colegio Amapola</title>
-    <link rel="stylesheet" href="/src/global styles/global.css">
+    <link rel="stylesheet" href="/src/global-styles/global.css">
 </head>
 <body>
     <Head/>
 
 
+        <section class="about">
+
+           <div class="historia-flex">
+
+                <div class="historia">
+
+                    <h1>Historia</h1>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit, mollis mus enim praesent ac augue eget fames, volutpat convallis odio fringilla tellus et. Blandit vivamus nec fringilla ad fames ridiculus taciti accumsan ligula dis augue, consequat nam mi dignissim aliquam leo lobortis diam viverra nulla. Quam non morbi etiam mauris orci tortor semper, suscipit litora lobortis vulputate a tempus eleifend sagittis, proin nisl aenean et sociis sed.
+                    </p>
+                    <br>
+                    <p>
+                        Habitasse quis viverra facilisis mus phasellus habitant cum hac nam platea, morbi nec blandit cursus pretium sociosqu vehicula primis pulvinar, orci consequat fames odio diam mollis velit lectus nibh. Praesent dui urna facilisi euismod tempus sociosqu dis, malesuada blandit purus pharetra dictum odio senectus fermentum, quam feugiat etiam ornare at rutrum.
+                    </p>
+                
+                </div>
+                
+                <div class="historia-img">
+                    <img src="/public/img/index-image/main-fondo.jpg" alt="">
+                </div>
+
+           </div>
+
+            <div class="m-v-v">
+                
+                <div class="mision">
+                    <h1>Mision</h1>
     
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit integer montes venenatis nullam, bibendum sem habitant convallis vitae dapibus nunc pulvinar torquent aliquam eros netus, tortor aptent litora urna morbi laoreet accumsan cursus quam interdum. Urna sociosqu tincidunt aliquam himenaeos scelerisque purus pretium, nascetur mollis litora porta ut magna libero, taciti sed rhoncus malesuada morbi a brt. Condimentum porta cras rutrum ornare mollis molestie   bibendum, suspendisse commodo id dignissim nulla volutpat morbi, aenean cursus libero urna per faucibus. Lacinia </p>
+                </div>
+    
+                <div class="linea"></div>
+
+                <div class="mision">
+                    <h1>Vision</h1>
+    
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit integer montes venenatis nullam, bibendum sem habitant convallis vitae dapibus nunc pulvinar torquent aliquam eros netus, tortor aptent litora urna morbi laoreet accumsan cursus quam interdum. Urna sociosqu tincidunt aliquam himenaeos scelerisque purus pretium, nascetur mollis litora porta ut magna libero, taciti sed rhoncus malesuada morbi at. Condimentum porta cras rutrum ornare mollis molestie bibendum, suspendisse commodo id dignissim nulla volutpat morbi, aenean cursus libero urna per faucibus. Lacinia .</p>
+                </div>
+    
+                <div class="linea"></div>
+
+                <div class="mision">
+                    <h1>Valores</h1>
+    
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit integer montes venenatis nullam, bibendum sem habitant convallis vitae dapibus nunc pulvinar torquent aliquam eros netus, tortor aptent litora urna morbi laoreet accumsan cursus quam interdum. Urna sociosqu tincidunt aliquam himenaeos scelerisque purus pretium, nascetur mollis litora porta ut magna libero, taciti sed rhoncus malesuada morbi at. Condimentum porta cras rutrum ornare mollis molestie bibendum, suspendisse commodo id dignissim nulla volutpat morbi, aenean cursus libero urna per faucibus. Lacinia </p>
+                </div>
+            
+            </div>
+
+        </section>
 
 
     <Footer/>
@@ -26,6 +76,74 @@ import Footer from '../components/footer.astro'
 
 <style>
 
+    body{
+        background: rgb(59,67,123);
+        background: linear-gradient(90deg, rgba(59,67,123,1) 48%, rgba(226,57,57,1) 51%);
+    }
+
+    .about{
+        padding: 25px;
+        margin: 45px;
+        background-color: white;
+        height: 100%;
+    }
+
+    .historia-flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 45px;
+        margin-top: 35px;
+        
+    }
+
+    .historia-img img{
+        width: 500px;
+        margin-top: 65px;
+        border-radius: 45px;
+    }
+
+    .historia{
+        padding: 25px;
+        width: 700px;
+    }
+
+    .historia h1{
+        font-size: 45px;
+        font-style: italic;
+        color: rgb(59, 59, 59);
+    }
+
+    .historia p{
+        font-size: 20px;
+    }
+
+    .m-v-v{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;       
+        margin: 95px 95px;
+    }
+
+    .linea{
+        width: 1px;
+        height: 400px;
+        margin: 15px 45px;
+        background-color: black;
+    }
+
+    .mision{
+        max-width: 1500px;
+        width: 400px;
+    }
+
+    .mision h1{
+        font-style: italic;
+        font-size: 45px;
+        text-align: center;
+        color: rgb(80, 78, 78);
+    }
 
 
 </style>
