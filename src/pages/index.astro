@@ -3,11 +3,10 @@ import Head from '../components/head.astro'
 import Footer from '../components/footer.astro'
 ---
 
-<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/png" href="public/img/logo.png" />
+		<link rel="icon" type="image/png" href="/public/logo.png"/>
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Colegio Amapola</title>
@@ -22,7 +21,7 @@ import Footer from '../components/footer.astro'
 	
 				<div class="main-page">
 					<div class="presentation">
-						<img src="/public/img/logo.png" alt="">
+						<img src="/public/logo.png" alt="">
 					</div>
 					 
 					<div class="title">
@@ -41,13 +40,13 @@ import Footer from '../components/footer.astro'
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, earum doloremque, fugiat eaque porro nemo, ratione itaque non rerum magnam distinctio. Minima, eum aut? Eum fugiat autem possimus facere quae!
 					</p>
-					<button><a href="https://www.google.com/maps/dir/18.5108636,-69.8478165/18.5193708,-69.8567605/@18.5144048,-69.8610099,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu" target="_blank">Ver mapa</a></button>
+					<button><a href="https://www.google.com/maps/dir/18.5108636,-69.8478165/18.5193708,-69.8567605/@18.5144048,-69.8610099,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu" target="_blank" >Ver mapa</a></button>
 				</div>
 		 
-				 
+				<!--  -->
 		 
 				<div class="map">
-					<img src="/public/img/ubicacion.jpg" alt="">
+					<img src="/public/ubicacion.jpg" alt="">
 				</div>
 		 
 			 </section>
@@ -72,7 +71,7 @@ import Footer from '../components/footer.astro'
 
 
 	.bgc{
-		background-image: url("/public/img/main-fondo.jpg");
+		background-image: url("/public/main-fondo.jpg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
