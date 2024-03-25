@@ -79,13 +79,24 @@ import Footer from '../components/footer.astro'
     body{
         background: rgb(59,67,123);
         background: linear-gradient(90deg, rgba(59,67,123,1) 48%, rgba(226,57,57,1) 51%);
+        
     }
 
     .about{
         padding: 25px;
         margin: 45px;
+        margin: 0 auto;
         background-color: white;
-        height: 100%;
+        min-width: 1295px;
+        max-width: 1800px; 
+    }
+
+    /*media provicional (cmabiar con diseño responsive)*/ 
+
+    @media(max-width: 1440px){
+        .about{
+           max-width: 1330px;
+        }
     }
 
     .historia-flex{
@@ -93,7 +104,7 @@ import Footer from '../components/footer.astro'
         justify-content: center;
         align-items: center;
         margin-bottom: 45px;
-        margin-top: 35px;
+        margin-top: 100px;
         
     }
 
@@ -124,6 +135,7 @@ import Footer from '../components/footer.astro'
         align-items: center;
         text-align: justify;       
         margin: 95px 95px;
+        margin-bottom: 195px;
     }
 
     .linea{
