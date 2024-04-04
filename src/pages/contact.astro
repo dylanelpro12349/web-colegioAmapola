@@ -1,0 +1,112 @@
+---
+import Head from '../components/head.astro'
+import Footer from '../components/footer.astro'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="public/img/icons/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio Amapola</title>
+    <link rel="stylesheet" href="/src/global-styles/global.css">
+</head>
+<body>
+    <Head/>
+
+
+    
+    <section class="contact">
+
+        <div class="redes">
+
+            <h1>Redes sociales</h1>
+            <p>
+                Pueden buescar mas informacion en nuestras redes sociales, donde subimos contenido referente a actividades, festividades y de mas:
+            </p>
+
+            <div class="facebook">
+                <a href="https://web.facebook.com/colegioamapola/about_contact_and_basic_info?locale=es_LA" target="_blank"><img src="/public/img/contact-img/facebook.webp" alt="" width="50px"></a>
+                <p>Pueden buscarnos en facebook como:</p>
+                <a href="https://web.facebook.com/colegioamapola/about_contact_and_basic_info?locale=es_LA" target="_blank">Colegio Amapola</a>
+            </div>
+
+            <div class="insta">
+                
+                <a href="https://www.instagram.com/colegioamapola/?hl=es" target="_blank"><img src="/public/img/contact-img/instagram.webp" alt="" width="50px"></a>
+                <p>En instagram como:</p>
+                <a href="https://www.instagram.com/colegioamapola/?hl=es" target="_blank">@colegioamapola</a>
+
+            </div>
+
+        </div>
+
+        <div class="tel-email">
+
+            <h1>Contacto</h1>
+            <p>Tambien puedes contactarnos directamente para obtener informacion sobre la admision, ofertas acdemicas, etc</p>
+
+            <div class="whats">
+
+                <img src="/public/img/icons/whatsapp.png" alt="">
+                <p>pueden escribirnos en nuestro whatsapp:</p>
+                <span>8**-***-****</span>
+
+            </div>
+            
+            <div class="email">
+                <p>O pueden consultarnos en nuestro correo electornico</p>
+                <img src="/public/img/icons/gmail.png" alt="">
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSGLPkQWRpdlMJwWzqBxvHfmdSXXldlGnNJQsjDvhxSQfxPQbTqGghQDMRSkNPPgMWFxdtTq" target="_blank">Info@colegioamapola.com</a>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <Footer/>
+
+</body>
+</html>
+
+<style>
+
+ 
+    .pie{
+        padding: 25px;
+        background: rgb(238,60,59);
+        background: linear-gradient(142deg, rgba(238,60,59,1) 0%, rgba(59,67,123,1) 68%);
+        display: flex;
+        justify-content: center;
+        border-top: 2px solid white;
+    }
+
+    .logo-foot{
+        margin-top: 25px;
+    }
+
+    .logo-foot p{
+        width: 450px;
+        color: white;
+        padding-right: 35px;
+        text-align: center;
+        
+    }
+
+    .logo-foot img{
+        width: 100px;
+        margin-left: 35%;
+        margin-bottom: 15px;
+    }
+
+    .linea{
+        height: 350px;
+        width: 1px;
+        background-color: rgb(147, 144, 144);
+    }
+
+</style>
