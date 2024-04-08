@@ -17,8 +17,6 @@ import Footer from '../components/footer.astro'
 		<Head/>
 		
 
-		<h1>hola mundo</h1>d
-
 		<section class="inicio">
 
 			<section class="bgc">
@@ -47,7 +45,6 @@ import Footer from '../components/footer.astro'
 					<button><a href="https://www.google.com/maps/dir/18.5108636,-69.8478165/18.5193708,-69.8567605/@18.5144048,-69.8610099,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu" target="_blank" >Ver mapa</a></button>
 				</div>
 		 
-				<!-- m dsfdgsdf-->
 		 
 				<div class="map">
 					<img src="/public/img/index-image/ubicacion.jpg" alt="">
@@ -111,7 +108,6 @@ import Footer from '../components/footer.astro'
 	.direccion{
 		width: 500px;
 		margin-right: 110px;
-		text-align: justify;
 	}
 
 	.map img{
@@ -159,6 +155,57 @@ import Footer from '../components/footer.astro'
 
 	::-webkit-scrollbar {
     	display: none;
+	}
+
+	/* Responsive */
+
+	
+	@media(max-width:1200px) {
+		.direccion{
+			width: 380px;
+			margin-right: 90px;
+		}
+
+		.map img{
+			width: 400px;
+			border-radius: 45px;
+		}
+	}
+	
+	@media(max-width: 1080px){
+		
+		.presentation img{
+			width: 200px;
+		}
+
+		#title{
+			font-size: 65px;
+		}
+
+		#lema{
+			font-size: 48px;
+		}
+
+		.direccion{
+			width: 500px;
+			margin-right: 70px;
+		}
+
+		.map img{
+			width: 400px;
+			border-radius: 45px;
+		}
+
+		.direccion h1{
+			font-size: 35px;
+		}
+
+		.direccion p{
+			margin-top: 10px;
+			font-size: 20px;
+		}
+
+
 	}
 
 </style>
