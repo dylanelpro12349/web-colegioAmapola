@@ -10,21 +10,28 @@
 
 
     <nav class="navegacion">
-        <div class="menu">
-            <img src="/public/img/icons/menu.ico" alt="" id="menu">
+        <div class="menu" >
+            <img src="/public/img/icons/menu.ico" alt=""  onclick="toggleMenu()">
         </div>
-        <ul class="ul-head">
+        <ul class="ul-head" id="menuList">
             <li class="li-head"><a href="/">inicio</a></li>
             <li class="li-head"><a href="/contact">Contactanos</a></li>
             <li class="li-head"><a href="/admisiones">Admisiones</a></li>
             <li class="li-head"><a href="/actividades">Actividades</a></li>
             <li class="li-head"><a href="/about">Sobre nosotros</a></li>
         </ul>
+        
     </nav>
 
 </header>
 
 <style>
+
+    html, body{
+        height: 100%;
+        width: 100%;
+    }
+
     .head{
         display: flex;
         justify-content: space-between;
@@ -34,6 +41,7 @@
         border-bottom: 2px solid white;
         position: sticky;
         top: 0;
+        width: 100%;
         z-index: 2;
         
     }
@@ -54,6 +62,7 @@
         display: none; 
         margin-right: 40px;
         user-select: none;
+        height: 100%;
     }
 
     .menu img{
@@ -62,6 +71,7 @@
 
     nav .ul-head{
         display: flex;
+        flex-direction: row;
         list-style: none;
         align-items: center;
         margin-right: 15px;
@@ -94,16 +104,23 @@
 
     /* Responsive */
 
+
     @media(max-width: 860px){
+
         nav .ul-head{
-            display: none;
-            background-color: white;
+            text-align: center;
+            flex-direction: column;
             position: absolute;
-            right: 0px;
+            top: 125px;
+            right: -15px;
+            left: 0px;
             padding: 20px;
-            border-radius: 20px;
-            box-shadow: 0px 10px 23px 0px rgba(0,0,0,0.55);
+            padding-bottom: 20px;
             line-height: 40px;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            box-shadow: ;
+            overflow: hidden;
             z-index: 2;
         }
 
@@ -140,12 +157,26 @@
             padding-bottom: -5px;
         }
 
-
-
     }
-
 
 </style>
 
+<script>
+
+    let menuList = document.getElementById("menuList")
+    menuList.style.maxHeight = "0px";
+
+    function toggleMenu(){
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "300px";
+        }
+        else{
+            menuList.style.maxHeight = "0px";
+        }
+    }
+
+
+</script>
 
 
