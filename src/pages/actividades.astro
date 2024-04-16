@@ -5,27 +5,168 @@ import Footer from '../components/footer.astro'
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
 
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="public/img/icons/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colegio Amapola</title>
-    <link rel="stylesheet" href="/src/global-styles/global.css">
-</head>
-<body>
-    <Head/>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="public/img/icons/logo.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Colegio Amapola</title>
+        <link rel="stylesheet" href="/src/global-styles/global.css">
 
-asdasd
-    
+    </head>
 
+    <body>
+            <Head/>
 
-    <Footer/>
-</body>
+        <section class="Actividades">
+            <h1>Actividades</h1>
+            
+            <div>
+                <h1 class="lo">clases extracurriculares</h1>
+            </div>
+
+            <div class="C-E">
+                <img src="/public/img/actividades-img/a1.webp">
+                <div>
+                    <p>Bienvenidos a la sección de actividades, en estas imagenes van a visualizar diferentes contenidos del colegio amapola, Como podrán ver, estas clases mencionadas se dan en los cursos de primaria. </p>
+                    <ul>
+                        <li>Ballet</li>
+                        <li>Musica</li>
+                        <li>robótica</li>
+                        <li>programación</li>
+                        <li>taekwondo</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="C-E1">
+                <p>De este lado como podrán ver, estas son las clases que se les da a los estudiantes de secundaria.</p>
+                <ul class="uli">
+                    <li>Matemática Financiera</li>
+                    <li>Clases de música</li>
+                    <li>Programación Web</li>
+                    <li>Taller de Química</li>
+                    <li>Teatro y Actuación</li>
+                    <li>Oratoria y Comunicación</li>
+                    <li>Pintura y Dibujo</li>
+                    <li>Marketing Digital</li>
+                    <li>English Conversation Program</li>
+                </ul>
+                <img src="/public/img/actividades-img/a3.webp">
+            </div>
+            
+            <div>
+                <h1 class="lo">Nuestras instalaciones</h1>
+            </div>
+
+            <div class="C-E2">
+                <img src="C:\Users\dylan\Pictures\a\a2.png">
+                <p>Bienvenidos a la parte de nuestras instalaciones, a estas áreas los chicos de primaria hasta secundaria tienen acceso, estas areas que están activas en el horario escolar, Podrán ver el área de: </p>
+            </div>
+            
+            <div class="C-E3">
+                <ul class="ulo">
+                    <li>Cancha</li>
+                    <li>Centro de Informática</li>
+                    <li>Amplias aulas</li>
+                    <li>Laboratorio de Ciencias</li>
+                    <li>Área de Juegos</li>
+                    <li>Cámaras de Seguridad</li>
+                </ul>
+                <img src="/public/img/actividades-img/a2.webp">
+            </div>
+
+        </section>
+
+        <Footer/>
+
+    </body>
+  
 </html>
 
 <style>
 
+    body{
+        background: rgb(59,67,123);
+        background: linear-gradient(90deg, rgba(59,67,123,1) 48%, rgba(226,57,57,1) 51%);
+        
+    }
+    
+    .Actividades{
+        padding: 25px;
+        background-color: aqua;
+        margin: 0 auto;
+        background-color: white;
+        max-width: 2000px;}
+
+    .C-E img{
+        width: 500px;
+        border-radius: 45px;
+    }
+
+    .C-E1 img{
+        width: 500px;
+        margin-top: 65px;
+        border-radius: 45px;
+    }
+
+    .C-E2 img{
+        width: 500px;
+        margin-top: 65px;
+        border-radius: 45px;
+    }
+
+    .C-E3 img{
+        width: 500px;
+        margin-left: 170px;
+        border-radius: 45px;
+    }
+
+    .Actividades h1,
+    .Nuestras h1{
+        font-size: 45px;
+        font-style: italic;
+        color: rgb(59, 59, 59);
+    }
+    
+    .C-E{
+        display: flex;
+    }
+
+    .C-E1{
+        text-align: end;
+        display: flex;
+    }
+
+    .C-E2{
+        display: flex;
+    }
 
 
+    .C-E3{
+        display: flex;
+    }
+
+
+    p{
+        font-size: 50px;
+    }
+    
+    ul{
+        font-size: 50px;
+    }
+    
+    .uli{
+        font-size: 40px;
+    }
+
+    .ulo{
+        font-size: 50px;
+    }
+
+    .lo{
+        margin-left: 305px;}
+
+        
 </style>
+      
