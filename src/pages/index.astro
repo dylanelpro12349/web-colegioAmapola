@@ -37,14 +37,16 @@ import Footer from '../components/footer.astro'
 		 
 			<section class="relleno">
 
-				<div class="relleno-text">
-					<h1>Bienvenidos al Colegio Amapola</h1>
-					<p>Bienvenidos a nuestra oferta academica donde pueden brindarles una direccion para el aprendisaje de su hij@ y darles la mejor educacion que se les puede dar en todo Los Mina</p>
-				 </div>
-
-				 <div class="img-relleno">
-					<img src="/public/img/index-image/relleno.png" alt="">
-				 </div>
+				<div class="back">
+					<div class="relleno-text">
+						<h1>Bienvenidos al Colegio Amapola</h1>
+						<p>Bienvenidos a nuestra oferta academica donde pueden brindarles una direccion para el aprendisaje de su hij@ y darles la mejor educacion que se les puede dar en todo Los Mina</p>
+					 </div>
+	
+					 <div class="img-relleno">
+						<img src="/public/img/index-image/relleno.png" alt="">
+					 </div>
+				</div>
 
 			</section>
 
@@ -61,8 +63,6 @@ import Footer from '../components/footer.astro'
 					<p>Pueden disfrutar de nuestras Instalaciones donde contamos con un amplio campus, cancha, camaras de seguridad, etc.</p>
 
 				</div>
-
-				
 
 				<div class="btn-instalaciones">
 					<button>Ver mas</button>
@@ -107,8 +107,6 @@ import Footer from '../components/footer.astro'
 		opacity: .8;
 	}
 	
-
-
 	.main-page{
 		padding: 95px 0;
 		display: flex;
@@ -136,31 +134,47 @@ import Footer from '../components/footer.astro'
 
 
 	.relleno{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 55px 245px;
+		padding: 25px;
 		background: rgb(238,60,59);
-		background: linear-gradient(180deg, rgba(238,60,59,1) 33%, rgba(59,67,123,1) 100%);
+		background: linear-gradient(180deg, rgba(233,60,61,1) 70%, rgba(59,67,123,1) 100%);
 		box-shadow: inset 0px 7px 48px -21px rgba(59,66,123,1);
 
 	}
 
+	.back{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
 	.relleno-text{
-		color: white;
+		background-color: rgb(229, 232, 232);
+		color: rgb(51, 51, 51);
 		width: 70rem;
+		padding: 55px;
+		border-radius: 5px;
+		max-width: 995px;
+	
 	}
 	.relleno-text h1{
 		font-size: 45px;
 		font-style: italic;
 	}
 
-	.img-relleno img{
-		width: 590px;
+	.relleno-text p{
+		font-size: 22px;
 	}
 
-	.relleno-text p{
-		font-size: 25px;
+	.img-relleno img{
+		width: 390px;
+		margin-left: 50px;
+	}
+
+	.relleno2{
+		background: rgba(59,67,123,1);
+		background: linear-gradient(180deg, rgba(59,67,123,1) 20%, rgba(233,60,61,1) 60%);
+		box-shadow: inset 0px 7px 0px -21px rgba(233,60,61,1);
+		display: flex;
 	}
 
 	.ubicacion{
@@ -218,13 +232,51 @@ import Footer from '../components/footer.astro'
 		background-color: #313765;
 	}
 
-	::-webkit-scrollbar {
-    	display: none;
-	}
-
 	/* Responsive */
 
-	
+	@media(min-width: 1710px){
+
+		.relleno{
+			padding: 25px 55px;
+			background: rgb(233,60,61);
+			background: linear-gradient(180deg, rgba(233,60,61,1) 70%, rgba(59,67,123,1) 100%);
+			box-shadow: inset 0px 7px 48px -21px rgba(59,66,123,1);
+
+		}
+
+		.back{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-radius: 15px;
+			margin: 0px 120px;
+		}
+
+		.relleno-text{
+			background-color: rgb(229, 232, 232);
+			color: rgb(51, 51, 51);
+			width: 70rem;
+			padding: 55px;
+			border-radius: 5px;
+			max-width: 995px;
+		
+		}
+		.relleno-text h1{
+			font-size: 45px;
+			font-style: italic;
+		}
+
+		.relleno-text p{
+			font-size: 22px;
+		}
+
+		.img-relleno img{
+			width: 390px;
+		}
+
+
+	}
+
 	@media(max-width:1200px) {
 		.direccion{
 			width: 380px;
@@ -269,7 +321,6 @@ import Footer from '../components/footer.astro'
 			margin-top: 10px;
 			font-size: 20px;
 		}
-
 
 	}
 
