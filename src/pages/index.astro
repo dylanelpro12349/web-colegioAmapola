@@ -39,7 +39,7 @@ import Footer from '../components/footer.astro'
 
 				<div class="back">
 					<div class="relleno-text">
-						<h1>Bienvenidos al Colegio Amapola</h1>
+						<h1>Bienvenidos al Colegio Amapola</h1><br>
 						<p>Bienvenidos a nuestra oferta academica donde pueden brindarles una direccion para el aprendisaje de su hij@ y darles la mejor educacion que se les puede dar en todo Los Mina</p>
 					 </div>
 	
@@ -53,21 +53,21 @@ import Footer from '../components/footer.astro'
 			<section class="relleno2">
 
 				<div class="img-relleno2">
-					<img src="/public/img/index-image/aulas.png" alt="" id="1" width="250">
-					<img src="/public/img/index-image/cancha.png" alt="" id="2" width="250">
-					<img src="/public/img/index-image/camaras.png" alt="" id="3">
+					<img src="/public/img/index-image/vista-previa.png" alt="">
 			   </div>
 
-				<div class="relleno-text2">
+				<div class="back">
+					<div class="relleno-text2">
 
-					<p>Pueden disfrutar de nuestras Instalaciones donde contamos con un amplio campus, cancha, camaras de seguridad, etc.</p>
-
+						<p>Pueden disfrutar de nuestras Instalaciones donde contamos con amplias aulas, cancha, camaras de seguridad, etc.</p>
+	
+					</div>
+	
+					<div class="btn-relleno2">
+						<button>Ver mas</button>
+					</div>
+	
 				</div>
-
-				<div class="btn-instalaciones">
-					<button>Ver mas</button>
-				</div>
-
 			</section>
 
 			<section class="ubicacion">
@@ -78,7 +78,7 @@ import Footer from '../components/footer.astro'
 						Pueden encontrarnos en nuestras <a href="#">Instalaciones</a>, la cual esta ubicada en <a href="https://www.google.com/maps/dir/18.5108636,-69.8478165/18.5193708,-69.8567605/@18.5144048,-69.8610099,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu" target="_blank" >Av. Trinitaria No. 28, Cancino 1, 
 						Santo Domingo Este, Rep Dom.</a>
 					</p>
-					<button><a href="https://www.google.com/maps/dir/18.5108636,-69.8478165/18.5193708,-69.8567605/@18.5144048,-69.8610099,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu" target="_blank" >Ver mapa</a></button>
+					<a href="https://www.google.com/maps/dir/18.5108636,-69.8478165/18.5193708,-69.8567605/@18.5144048,-69.8610099,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu" target="_blank" ><button>Ver mapa</button></a>
 				</div>
 		 
 		 
@@ -138,13 +138,13 @@ import Footer from '../components/footer.astro'
 		background: rgb(238,60,59);
 		background: linear-gradient(180deg, rgba(233,60,61,1) 70%, rgba(59,67,123,1) 100%);
 		box-shadow: inset 0px 7px 48px -21px rgba(59,66,123,1);
-
 	}
 
 	.back{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding-bottom: 100px;
 	}
 
 	.relleno-text{
@@ -172,9 +172,61 @@ import Footer from '../components/footer.astro'
 
 	.relleno2{
 		background: rgba(59,67,123,1);
-		background: linear-gradient(180deg, rgba(59,67,123,1) 20%, rgba(233,60,61,1) 60%);
-		box-shadow: inset 0px 7px 0px -21px rgba(233,60,61,1);
+		box-shadow: inset 0px 7px 48px -21px rgba(59,66,123,1);
 		display: flex;
+		justify-content: space-between;
+		padding: 50px 0px;
+	}
+
+	.relleno2 .back{
+		background-color: rgb(229, 232, 232);
+		color: rgb(51, 51, 51);
+		font-weight: bold;
+		flex-direction: column;
+		justify-content: center;
+		align-items: end;
+		width: 70rem;
+		padding: 55px;
+		border-radius: 5px;
+		max-width: 795px;
+		margin-bottom: 50px;
+		margin-right: 25px;
+		
+	}
+
+	.relleno-text2{
+		font-size: 25px;
+		margin-bottom: 95px;
+	}
+
+	.btn-relleno2 button{
+		padding: 5px 35px;
+		border-radius: 55px;
+		font-size: 20px;
+		font-weight: bold;
+		cursor: pointer;
+		border: 2px #5c5d61 solid;
+		transition: 0.5s;
+	}
+
+	.btn-relleno2 button:hover{
+		background-color: #5c5d61;
+		color: white;
+	}
+
+	.btn-relleno2 button:active{
+		background-color: #494a4d;
+	}
+
+	.img-relleno2{
+		display: flex;
+		flex-direction: column;
+	}
+	.img-relleno2 img{
+		width: 500px;
+		border: 2px #fff solid;
+		border-radius: 10px;
+		margin-left: 25px;
 	}
 
 	.ubicacion{
@@ -218,7 +270,7 @@ import Footer from '../components/footer.astro'
 		color: black;
 	}
 
-	.direccion button a:hover{
+	.direccion button:hover{
 		color: white;
 	}
 
