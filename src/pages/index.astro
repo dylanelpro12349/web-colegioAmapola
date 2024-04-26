@@ -52,22 +52,25 @@ import Footer from '../components/footer.astro'
 
 			<section class="relleno2">
 
-				<div class="img-relleno2">
-					<img src="/public/img/index-image/vista-previa.png" alt="">
-			   </div>
-
-				<div class="back">
-					<div class="relleno-text2">
-
-						<p>Pueden disfrutar de nuestras Instalaciones donde contamos con amplias aulas, cancha, camaras de seguridad, etc.</p>
+				<div class="ancho">
+					<div class="img-relleno2">
+						<img src="/public/img/index-image/vista-previa.png" alt="">
+				   </div>
 	
+					<div class="back">
+						<div class="relleno-text2">
+	
+							<p>Pueden disfrutar de nuestras Instalaciones donde contamos con amplias aulas, cancha, camaras de seguridad, etc.</p>
+		
+						</div>
+		
+						<div class="btn-relleno2">
+							<button>Ver mas</button>
+						</div>
+		
 					</div>
-	
-					<div class="btn-relleno2">
-						<button>Ver mas</button>
-					</div>
-	
 				</div>
+				
 			</section>
 
 			<section class="ubicacion">
@@ -150,10 +153,9 @@ import Footer from '../components/footer.astro'
 	.relleno-text{
 		background-color: rgb(229, 232, 232);
 		color: rgb(51, 51, 51);
-		width: 70rem;
 		padding: 55px;
 		border-radius: 5px;
-		max-width: 995px;
+		max-width: 1995px;
 	
 	}
 	.relleno-text h1{
@@ -173,9 +175,15 @@ import Footer from '../components/footer.astro'
 	.relleno2{
 		background: rgba(59,67,123,1);
 		box-shadow: inset 0px 7px 48px -21px rgba(59,66,123,1);
+		text-align: center;
+		width: 100%;
+		padding: 50px 0px;
+	}
+
+	.ancho{
 		display: flex;
 		justify-content: space-between;
-		padding: 50px 0px;
+		margin: 0 auto;
 	}
 
 	.relleno2 .back{
@@ -183,14 +191,13 @@ import Footer from '../components/footer.astro'
 		color: rgb(51, 51, 51);
 		font-weight: bold;
 		flex-direction: column;
-		justify-content: center;
 		align-items: end;
-		width: 70rem;
 		padding: 55px;
 		border-radius: 5px;
-		max-width: 795px;
+		max-width: 1295px;
 		margin-bottom: 50px;
 		margin-right: 25px;
+		margin-left: 45px;
 		
 	}
 
@@ -307,10 +314,9 @@ import Footer from '../components/footer.astro'
 		.relleno-text{
 			background-color: rgb(229, 232, 232);
 			color: rgb(51, 51, 51);
-			width: 70rem;
 			padding: 55px;
 			border-radius: 5px;
-			max-width: 995px;
+			max-width: 1295px;
 		
 		}
 		.relleno-text h1{
@@ -326,6 +332,14 @@ import Footer from '../components/footer.astro'
 			width: 390px;
 		}
 
+		.relleno2{
+			display: block;
+		}
+
+		.ancho{
+			max-width: 2195px;
+			margin: 0 auto;
+		}
 
 	}
 
