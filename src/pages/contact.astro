@@ -21,46 +21,43 @@ import Footer from '../components/footer.astro'
 
         <div class="redes">
 
-            <h1>Redes sociales</h1>
-            <p>
-                Pueden buescar mas informacion en nuestras redes sociales, donde subimos contenido referente a actividades, festividades y de mas:
-            </p>
-
-            <div class="facebook">
-                <a href="https://web.facebook.com/colegioamapola/about_contact_and_basic_info?locale=es_LA" target="_blank"><img src="/public/img/contact-img/facebook.webp" alt="" width="50px"></a>
-                <p>Pueden buscarnos en facebook como:</p>
-                <a href="https://web.facebook.com/colegioamapola/about_contact_and_basic_info?locale=es_LA" target="_blank">Colegio Amapola</a>
+            <div class="title">
+                <h1>Redes sociales</h1>
+                <p>
+                    Pueden buescar mas informacion en nuestras redes sociales, donde subimos contenido referente a actividades, festividades y de mas:
+                </p>
             </div>
 
-            <div class="insta">
+            <div class="flex">
+                <div class="facebook">
+                    <a href="https://web.facebook.com/colegioamapola/about_contact_and_basic_info?locale=es_LA" target="_blank"><img src="/public/img/contact-img/facebook.webp" alt="" ></a>
+                    <p>Pueden buscarnos en facebook como:</p>
+                    <a href="https://web.facebook.com/colegioamapola/about_contact_and_basic_info?locale=es_LA" target="_blank">Colegio Amapola</a>
+                </div>
+    
+                <div class="insta">
+                    
+                    <a href="https://www.instagram.com/colegioamapola/?hl=es" target="_blank"><img src="/public/img/contact-img/instagram.webp" alt=""></a>
+                    <p>En instagram como:</p>
+                    <a href="https://www.instagram.com/colegioamapola/?hl=es" target="_blank">@colegioamapola</a>
+    
+                </div>
+
+                <div class="whats">
+
+                    <img src="/public/img/icons/whatsapp.png" alt="">
+                    <p>pueden escribirnos en nuestro whatsapp:</p>
+                    <span>849-408-7985</span>
+    
+                </div>
                 
-                <a href="https://www.instagram.com/colegioamapola/?hl=es" target="_blank"><img src="/public/img/contact-img/instagram.webp" alt="" width="50px"></a>
-                <p>En instagram como:</p>
-                <a href="https://www.instagram.com/colegioamapola/?hl=es" target="_blank">@colegioamapola</a>
-
+                <div class="email">
+                    
+                    <img src="/public/img/icons/gmail.png" alt="">
+                    <p>O pueden consultarnos en nuestro correo electornico:</p>
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSGLPkQWRpdlMJwWzqBxvHfmdSXXldlGnNJQsjDvhxSQfxPQbTqGghQDMRSkNPPgMWFxdtTq" target="_blank">Info@colegioamapola.com</a>
+                </div>
             </div>
-
-        </div>
-
-        <div class="tel-email">
-
-            <h1>Contacto</h1>
-            <p>Tambien puedes contactarnos directamente para obtener informacion sobre la admision, ofertas acdemicas, etc</p>
-
-            <div class="whats">
-
-                <img src="/public/img/icons/whatsapp.png" alt="">
-                <p>pueden escribirnos en nuestro whatsapp:</p>
-                <span>8**-***-****</span>
-
-            </div>
-            
-            <div class="email">
-                <p>O pueden consultarnos en nuestro correo electornico</p>
-                <img src="/public/img/icons/gmail.png" alt="">
-                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSGLPkQWRpdlMJwWzqBxvHfmdSXXldlGnNJQsjDvhxSQfxPQbTqGghQDMRSkNPPgMWFxdtTq" target="_blank">Info@colegioamapola.com</a>
-            </div>
-
 
         </div>
 
@@ -75,5 +72,63 @@ import Footer from '../components/footer.astro'
 
 <style>
 
+    .contact{
+        padding: 55px;
+        background-image: url(/public/img/contact-img/img-de-prueba.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .redes{
+        background-color: white;
+        padding: 45px;
+        border-radius: 5px;
+    }
+
+    .title{
+        margin-bottom: 145px;
+        text-align: center;
+        font-size: 45px;
+    }
+
+    .title h1{
+        margin-bottom: 15px;
+        font-style: italic;
+        color: rgb(59, 59, 59);
+    }
+
+    .title p{
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        gap: 152px;
+    }
+
+    .facebook img{
+        width: 70px;
+    }
+
+    .insta img{
+        width: 40px;
+    }
+
+    .whats img{
+        width: 40px;
+    }
+
+    .email img{
+        width: 40px;
+    }
+    
+    span{
+        border-bottom: 2px solid black;
+        padding: 0 2px;
+    }
 
 </style>
