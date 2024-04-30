@@ -4,28 +4,42 @@ import Footer from '../components/footer.astro'
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="public/img/icons/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colegio Amapola</title>
-    <link rel="stylesheet" href="/src/global-styles/global.css">
+    <title>Formulario de Admisiones</title>
 </head>
 <body>
+
     <Head/>
 
+    <h1>Formulario de Admisiones</h1>
+    <form class="uno" id="admissionsForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required><br><br>
 
-    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
 
+        <label for="phone">Teléfono:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
 
     <Footer/>
+
 </body>
 </html>
 
+
+
 <style>
-
-
+    body{
+        background: rgb(59,67,123);
+        background: linear-gradient(90deg, rgba(59,67,123,1) 48%, rgba(226,57,57,1) 51%);
+        
+    }
+  
 
 </style>
